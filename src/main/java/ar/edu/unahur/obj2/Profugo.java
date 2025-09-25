@@ -52,8 +52,8 @@ public class Profugo implements IProfugo,IHabilidad{
     }
 
     @Override
-    public void aumentarHabilidad(Integer i) {
-        
+    public void aumentarHabilidad() {
+        this.habilidad = Integer.min(100, habilidad * 2);
     }
 
     @Override

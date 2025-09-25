@@ -8,13 +8,13 @@ public class Urbano extends TipoCazador{
     }
 
     @Override
-    protected Boolean doCazar(Profugo profugo) {
+    protected Boolean doCazar(IProfugo profugo) {
         return !profugo.esNervioso();
     }
 
     @Override
-    protected void doIntimidar(Profugo profugo) {
-       profugo.setEsNervioso(Boolean.FALSE);
+    protected void doIntimidar(IProfugo profugo) {
+       profugo.dejarDeEstarNervioso();
     }
 
     @Override

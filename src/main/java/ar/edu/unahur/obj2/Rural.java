@@ -7,13 +7,13 @@ public class Rural extends TipoCazador{
     }
 
     @Override
-    protected Boolean doCazar(Profugo profugo) {
-        return profugo.getEsNervioso();
+    protected Boolean doCazar(IProfugo profugo) {
+        return profugo.esNervioso();
     }
 
     @Override
-    protected void doIntimidar(Profugo profugo) {
-        profugo.setEsNervioso(Boolean.TRUE);
+    protected void doIntimidar(IProfugo profugo) {
+        profugo.volverseNervioso();
     }
 
     @Override

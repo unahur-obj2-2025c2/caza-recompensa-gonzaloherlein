@@ -1,6 +1,6 @@
 package ar.edu.unahur.obj2;
 
-public abstract class TipoHabilidad implements IHabilidad {
+public abstract class TipoHabilidad implements IProfugo {
   protected IProfugo profugo;
 
   public TipoHabilidad(IProfugo profugo) {

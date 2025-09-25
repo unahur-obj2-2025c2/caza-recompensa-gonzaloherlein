@@ -17,7 +17,7 @@ public interface IProfugo {
 
     void entrenar();
 
-    void aumentarHabilidad(Integer i);
+    void aumentarHabilidad();
 
     void setInocencia(Integer i);
 }

@@ -8,13 +8,13 @@ public class Sigiloso extends TipoCazador{
     }
 
     @Override
-    protected Boolean doCazar(Profugo profugo) {
+    protected Boolean doCazar(IProfugo profugo) {
         return profugo.getHabilidad() < 50;
     }
 
     @Override
-    protected void doIntimidar(Profugo profugo) {
-        profugo.disminuirHabilidad(5);
+    protected void doIntimidar(IProfugo profugo) {
+        profugo.reducirHabilidad();
     }
 
     @Override
